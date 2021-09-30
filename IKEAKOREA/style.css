@@ -171,3 +171,73 @@ header img {
   background-color: #111;
   color: #fff;
 }
+
+/* promotion */
+
+.promotion {
+  margin-left: 20px;
+  padding-bottom: ;
+}
+
+.promotion .promotion-title {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.promotion-list {
+  display: flex;
+  overflow: scroll;
+}
+
+.promotion-list li {
+  margin-right: 20px;
+}
+
+.promotion-list div {
+  width: 260px;
+  height: 376px;
+  padding: 32px;
+}
+
+.promotion-list .list-family {
+  background-color: #a4b9c2;
+}
+
+.promotion-list .list-IKEAlap {
+  background-color: #cbd6e7;
+}
+
+.promotion-list .list-transball {
+  color: #fff;
+  background-color: #06432d;
+}
+
+.promotion-list .list-installsevice {
+  background-color: #ecbc53;
+}
+
+.promotion-list li:hover div h2 {
+  text-decoration: underline #484848 2px;
+}
+
+.promotion-list h2 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.promotion-list p {
+  font-size: 16px;
+}
+
+.promotion-list img {
+  display: block;
+  width: 260px;
+  height: 260px;
+}
+
+.promotion-list .arrow {
+  display: block;
+  width: 56px;
+  height: 56px;
+  padding: 10px;
+}
