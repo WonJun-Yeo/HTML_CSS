@@ -5,6 +5,7 @@ body {
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
   line-height: 1.625;
 }
 
@@ -342,6 +343,120 @@ header .fa-truck {
   border-bottom: 1px solid #dfdfdf;
 }
 
+/* solution */
+
+.solution {
+  margin: 40px 20px;
+}
+
+.solution h1 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4444444444;
+  margin-bottom: 32px;
+}
+
+.solution-box {
+  display: flex;
+  overflow: scroll;
+}
+
+.solution .solution-list {
+  position: relative;
+  width: 231.75px;
+  height: 309px;
+  padding: 40px 32px 32px;
+  background-color: #00853e;
+  margin-right: 20px;
+}
+
+.solution .solution-list:last-child {
+  margin-right: 0;
+}
+
+.solution-list .fa-arrow-alt-circle-right {
+  font-size: 40px;
+  position: absolute;
+  bottom: 32px;
+}
+
+.solution .solution-title {
+  width: 167.75px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.solution a {
+  display: block;
+  width: 167.75px;
+}
+
+.solution img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.solution-list div {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 32px;
+}
+
+.solution-list div button {
+  display: inline-flex;
+  justify-self: center;
+  align-items: center;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3333333333;
+  white-space: nowrap;
+  text-align: center;
+  padding: 0 24px;
+  border-radius: 64px;
+  background-color: #fff;
+}
+
+/* magagine */
+
+.magagine-list {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 20px;
+}
+
+.magagine-list img {
+  width: 280px;
+  margin-bottom: 16px;
+}
+
+.magagine-list-box {
+  margin-bottom: 40px;
+}
+
+.magagine-list-box:last-child {
+  margin-bottom: 0;
+}
+
+.magagine-list-box img {
+  width: 280px;
+  margin-bottom: 16px;
+}
+
+.magagine-list-box button {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3333333333;
+  padding: 0 24px;
+}
+
 /* sevice */
 .service {
   margin: 40px 20px;
@@ -383,6 +498,66 @@ header .fa-truck {
   color: #484848;
   line-height: 1.571;
   text-decoration: underline;
+}
+
+/* home-furnishing */
+
+.home-furnishing {
+  margin: 40px 20px;
+}
+
+.home-furnishing-title {
+  font-size: 18px;
+  line-height: 1.4444444444;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.home-furnishing-box {
+  display: flex;
+  padding: 20px 0 16px;
+  overflow: scroll;
+}
+
+.home-furnishing-box li {
+  height: 40px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 3.333333333333333;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 64px;
+  white-space: nowrap;
+  padding: 0 24px;
+  margin-right: 12px;
+}
+
+.home-furnishing .home-furnishing-img img {
+  display: inline-block;
+  width: 134px;
+}
+
+.home-furnishing .home-furnishing-img .small-img {
+  height: 134px;
+}
+
+.home-furnishing .home-furnishing-img {
+  text-align: right;
+  margin: 0;
+}
+
+.home-furnishing-more {
+  text-align: center;
+}
+
+.home-furnishing button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 2.857142857142857;
+  color: #fff;
+  background-color: #111;
+  padding: 0 24px;
+  margin: 40px 0;
 }
 
 /* detail-info */
