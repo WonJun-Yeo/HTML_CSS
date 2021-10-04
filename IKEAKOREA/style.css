@@ -515,7 +515,10 @@ header .fa-truck {
 
 .home-furnishing-box {
   display: flex;
+  position: sticky;
+  top: 0;
   padding: 20px 0 16px;
+  background-color: #fff;
   overflow: scroll;
 }
 
