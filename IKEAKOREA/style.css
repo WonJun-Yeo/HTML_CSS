@@ -130,19 +130,17 @@ header .fa-truck {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 0 20px 2.5rem 20px;
-  overflow: hidden;
+  align-self: center;
+  margin: 40px 20px;
 }
 
 .campain-img {
-  display: flex;
-  justify-content: center;
-  height: auto;
+  width: 100%;
+  overflow: hidden;
 }
 
 .campain-img img {
-  object-fit: cover;
+  height: 100%;
 }
 
 .campain-desc {
@@ -274,6 +272,122 @@ header .fa-truck {
   background-color: rgb(0, 0, 0);
 }
 
+/* recommend-product */
+
+.recommend-product {
+  margin: 40px 20px;
+}
+
+.recommend-product h1 {
+  font-size: 18px;
+  line-height: 1.4444444444;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.recommend-product-box {
+  display: flex;
+  overflow: scroll;
+}
+
+.recommend-product-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 113px;
+  margin: 40px 10px 20px;
+}
+
+.recommend-product-list:last-child {
+  margin-right: 0;
+}
+
+.recommend-product-list .user-like {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 17px;
+  color: #929292;
+  border: none;
+}
+
+.recommend-product-list img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.recommend-product-list .recommend-product-list-img-hover {
+  display: none;
+}
+
+.recommend-product-list-box:hover .recommend-product-list-img {
+  display: none;
+}
+
+.recommend-product-list-box:hover .recommend-product-list-img-hover {
+  display: block;
+}
+
+.recommend-product-desc h3 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.recommend-product-desc p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #484848;
+  margin-bottom: 12px;
+}
+
+.recommend-price-box .fa-won-sign {
+  font-size: 12px;
+  line-height: 1.6;
+  vertical-align: text-top;
+}
+
+.recommend-price-box .recommend-price {
+  font-size: 16px;
+  line-height: 0.9090909091;
+  margin-bottom: 8px;
+}
+
+.star-score {
+  font-size: 10px;
+}
+
+.recommend-review {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.recommend-review .review-number {
+  font-size: 12px;
+  font-weight: 400;
+  color: #484848;
+}
+
+.recommend-product-desc .shopping-bucket {
+  margin-left: 73px;
+}
+
+.recommend-product-desc .fa-shopping-basket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: #0058a3;
+  border-radius: 50%;
+}
+
 /* new-product */
 
 .new-product {
@@ -294,12 +408,13 @@ header .fa-truck {
   margin-bottom: 5px;
 }
 
-.new-product .new-product-deail-info {
+.new-product .new-product-first .new-product .new-product-deail-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px;
   font-size: 14px;
+  font-weight: 700;
   margin-top: 12px;
   padding: 4px 0;
   border-bottom: 1px solid #dfdfdf;
@@ -338,6 +453,7 @@ header .fa-truck {
   align-items: center;
   height: 60px;
   font-size: 14px;
+  font-weight: 700;
   margin-top: 12px;
   padding: 4px 0;
   border-bottom: 1px solid #dfdfdf;
@@ -538,10 +654,6 @@ header .fa-truck {
 .home-furnishing .home-furnishing-img img {
   display: inline-block;
   width: 134px;
-}
-
-.home-furnishing .home-furnishing-img .small-img {
-  height: 134px;
 }
 
 .home-furnishing .home-furnishing-img {
