@@ -34,6 +34,8 @@ textarea:active {
 /* header */
 
 header {
+  display: flex;
+  width: 100%;
   height: 50.85px;
   font-size: 12px;
   font-weight: 400;
@@ -49,18 +51,23 @@ header a {
   padding: 16px 16px 16px 0;
 }
 
-header .fa-truck {
+header .fas {
   color: #fff;
   margin-right: 10px;
+}
+
+header .header-mobile-none {
+  display: none;
 }
 
 /* banner */
 
 .banner {
-  padding: 0 20px;
+  margin: 0 20px;
 }
 
 .banner-group {
+  width: 100%;
   border-bottom: 1px solid rgb(223, 223, 223);
   display: flex;
   flex-direction: column;
@@ -83,9 +90,23 @@ header .fa-truck {
 }
 
 .banner .user-icon-group img {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   padding: 10px;
+}
+
+.banner .search {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.banner .search img {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 7px;
+  padding: 7px;
 }
 
 .banner form input {
@@ -99,23 +120,6 @@ header .fa-truck {
   margin-bottom: 16px;
 }
 
-.banner .search {
-  position: relative;
-}
-
-.banner .search form button {
-  background: none;
-  border: 0;
-}
-
-.banner .search img {
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  top: 7px;
-  padding: 7px;
-}
-
 .banner .search .camera-img {
   right: 20px;
 }
@@ -127,6 +131,7 @@ header .fa-truck {
 /* campain */
 
 .campain {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -135,15 +140,17 @@ header .fa-truck {
 }
 
 .campain-img {
+  display: block;
   width: 100%;
-  overflow: hidden;
 }
 
 .campain-img img {
-  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .campain-desc {
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 40px 40px 60px;
@@ -164,7 +171,7 @@ header .fa-truck {
 .campain-desc button {
   font-size: 12px;
   font-weight: 700;
-  height: 2.5rem;
+  height: 40px;
   padding: 0 18px;
   border-radius: 34px;
   background-color: #111;
@@ -174,8 +181,8 @@ header .fa-truck {
 /* promotion */
 
 .promotion {
-  margin-left: 20px;
-  margin-bottom: 20px;
+  width: 100%;
+  margin: 40px 20px;
 }
 
 .promotion .promotion-title {
@@ -231,8 +238,8 @@ header .fa-truck {
 
 .promotion-list img {
   display: block;
-  width: 260px;
-  height: 260px;
+  width: 100%;
+  height: auto;
 }
 
 .fa-arrow-circle-right {
@@ -245,7 +252,8 @@ header .fa-truck {
 /* notice */
 
 .notice {
-  margin: 0 20px 40px;
+  width: 100%;
+  margin: 40px 20px;
   padding: 32px;
   background-color: #ffd285;
 }
@@ -266,6 +274,7 @@ header .fa-truck {
   text-align: center;
   line-height: 40px;
   font-size: 12px;
+  font-weight: 700;
   color: #fff;
   padding: 0 24px;
   border-radius: 64px;
@@ -363,7 +372,6 @@ header .fa-truck {
 
 .recommend-review {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 8px;
 }
 
@@ -391,6 +399,7 @@ header .fa-truck {
 /* new-product */
 
 .new-product {
+  width: 100%;
   margin: 40px 20px;
 }
 
@@ -400,6 +409,9 @@ header .fa-truck {
   font-weight: 700;
   margin-bottom: 40px;
 }
+.new-product a {
+  width: 100%;
+}
 
 .new-product img {
   object-fit: cover;
@@ -408,7 +420,7 @@ header .fa-truck {
   margin-bottom: 5px;
 }
 
-.new-product .new-product-first .new-product .new-product-deail-info {
+.new-product .new-product-deail-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -423,6 +435,7 @@ header .fa-truck {
 /* office-product */
 
 .office-product {
+  width: 100%;
   margin: 40px 20px;
 }
 
@@ -462,6 +475,7 @@ header .fa-truck {
 /* solution */
 
 .solution {
+  width: 100%;
   margin: 40px 20px;
 }
 
@@ -542,14 +556,19 @@ header .fa-truck {
 
 /* magagine */
 
+.magazine {
+  width: 100%;
+}
+
 .magagine-list {
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin: 40px 20px;
 }
 
 .magagine-list img {
-  width: 280px;
+  width: 100%;
   margin-bottom: 16px;
 }
 
@@ -562,7 +581,7 @@ header .fa-truck {
 }
 
 .magagine-list-box img {
-  width: 280px;
+  width: 100%;
   margin-bottom: 16px;
 }
 
@@ -575,6 +594,7 @@ header .fa-truck {
 
 /* sevice */
 .service {
+  width: 100%;
   margin: 40px 20px;
 }
 
@@ -619,6 +639,7 @@ header .fa-truck {
 /* home-furnishing */
 
 .home-furnishing {
+  width: 100%;
   margin: 40px 20px;
 }
 
@@ -653,7 +674,7 @@ header .fa-truck {
 
 .home-furnishing .home-furnishing-img img {
   display: inline-block;
-  width: 134px;
+  width: 40%;
 }
 
 .home-furnishing .home-furnishing-img {
@@ -881,4 +902,341 @@ button {
   margin-right: 20px;
   padding: 8px 0;
   border: none;
+}
+
+/* >= 768px (tablets) */
+@media screen and (min-width: 768px) {
+  /* header */
+  header {
+    display: flex;
+    justify-content: center;
+    height: 38.85px;
+    line-height: 1.571;
+    color: #fff;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    padding: 0 20px;
+  }
+
+  header a {
+    margin-right: 40px;
+  }
+
+  header .fas {
+    margin-right: 12px;
+  }
+
+  header .header-mobile-none {
+    display: inline-flex;
+  }
+
+  /* banner */
+
+  .banner {
+    margin: 0 48px;
+  }
+
+  .banner-group {
+    position: relative;
+  }
+
+  .IKEA-logo {
+    width: 90px;
+    height: 36px;
+    margin: 28px 0;
+  }
+
+  .banner .search {
+    width: calc(100% - 300px);
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    transform: translateY(-50%);
+  }
+
+  .search form {
+    width: 100%;
+  }
+
+  .banner form input {
+    width: 100%;
+    height: 54px;
+    font-size: 16px;
+    padding: 8px 54px;
+    background-color: rgb(245, 245, 245);
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 100px;
+    margin-bottom: 0px;
+  }
+
+  .banner .search img {
+    top: 10px;
+    padding: 7px;
+  }
+
+  .banner .search .camera-img {
+    right: 20px;
+  }
+
+  .banner .search .loupe-img {
+    left: 20px;
+  }
+
+  /* capmpain */
+
+  .campain {
+    width: 100%;
+    margin: 64px 48px;
+  }
+
+  .campain-desc {
+    padding: 80px;
+  }
+
+  .campain-desc h1 {
+    font-size: 25px;
+  }
+
+  .campain-desc p {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+
+  .campain-desc button {
+    padding: 0 24px;
+  }
+
+  /* promotion */
+
+  .promotion {
+    margin: 64px 48px;
+  }
+
+  .promotion .promotion-title {
+    font-size: 25px;
+  }
+
+  .promotion-list .list-box {
+    width: 296px;
+    height: 398px;
+  }
+
+  .promotion-list img {
+    display: block;
+    width: 100%;
+  }
+
+  .promotion-list h2 {
+    font-size: 25px;
+  }
+
+  /* notice */
+
+  .notice {
+    margin: 64px 48px;
+    padding: 80px;
+  }
+
+  .notice h1 {
+    font-size: 25px;
+  }
+
+  /* recommend-product */
+
+  .recommend-product {
+    margin: 64px 48px;
+  }
+
+  .recommend-product h1 {
+    font-size: 25px;
+    line-height: 1.36;
+    font-weight: 700;
+  }
+
+  .recommend-product-list .user-like {
+    display: none;
+  }
+
+  .recommend-product-list:hover .user-like {
+    display: inline-flex;
+  }
+
+  .recommend-product-list {
+    width: 196px;
+  }
+
+  .recommend-product-list img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .recommend-product-desc {
+    position: relative;
+  }
+
+  .recommend-product-desc h3 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.42857;
+    margin: 0;
+  }
+
+  .recommend-product-desc p {
+    line-height: 1.42857;
+    margin-bottom: 8px;
+  }
+
+  .recommend-price-box .fa-won-sign {
+    font-size: 11px;
+    line-height: 0.9;
+  }
+
+  .recommend-price-box .recommend-price {
+    font-size: 22px;
+  }
+
+  .recommend-product-desc .fa-shopping-basket {
+    position: absolute;
+    bottom: 60px;
+    right: 48px;
+  }
+
+  .recommend-product-desc .shopping-bucket {
+    display: none;
+  }
+
+  .recommend-product-list:hover .shopping-bucket {
+    display: inline-flex;
+  }
+
+  /* new-product */
+
+  .new-product {
+    position: relative;
+    margin: 64px 48px;
+  }
+
+  .new-product h2 {
+    font-size: 25px;
+    line-height: 1.36;
+  }
+
+  .new-product-img-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .new-product img {
+    width: 95%;
+  }
+
+  .new-product .new-product-deail-info {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 130px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 1.3333333333;
+    white-space: nowrap;
+    padding: 0 24px;
+    border: 1px solid #dfdfdf;
+    border-radius: 84px;
+    margin: 0;
+  }
+
+  .new-product .fa-chevron-right {
+    display: none;
+  }
+
+  /* office-product */
+
+  .office-product {
+    position: relative;
+    margin: 64px 48px;
+  }
+
+  .office-product h2 {
+    font-size: 25px;
+    line-height: 1.36;
+  }
+
+  .office-product-img-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .office-product .office-product-desc {
+    font-size: 14px;
+    color: #484848;
+    line-height: 1.571;
+    margin-bottom: 32px;
+  }
+
+  .office-product img {
+    width: 95%;
+  }
+
+  .office-product .office-product-deail-info {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    width: 200px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 1.3333333333;
+    white-space: nowrap;
+    padding: 0 24px;
+    border: 1px solid #dfdfdf;
+    border-radius: 84px;
+    margin: 0;
+  }
+
+  .office-product .fa-chevron-right {
+    display: none;
+  }
+
+  /* solution */
+
+  .solution {
+    margin: 64px 48px;
+  }
+
+  .solution h1 {
+    font-size: 25px;
+    line-height: 1.36;
+  }
+
+  /* magagine */
+
+  .magagine-list {
+    flex-direction: row;
+    margin: 64px 48px;
+  }
+
+  .magagine-list img {
+    display: block;
+    width: 45%;
+    margin-bottom: 0;
+  }
+
+  .magagine-list-box {
+    margin-bottom: 40px;
+  }
+
+  .magagine-list-box:last-child {
+    margin-bottom: 0;
+  }
+
+  .magagine-list-box img {
+    width: 280px;
+    margin-bottom: 16px;
+  }
+
+  .magagine-list-box button {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.3333333333;
+    padding: 0 24px;
+  }
 }
