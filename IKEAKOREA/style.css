@@ -148,6 +148,7 @@ header .header-mobile-none {
   display: flex;
   flex-direction: column;
   margin: 40px 20px;
+  background-color: rgb(0, 0, 0);
 }
 
 .campain a {
@@ -165,7 +166,8 @@ header .header-mobile-none {
   display: flex;
   flex-direction: column;
   padding: 40px 40px 60px;
-  background-color: #ffdb00;
+  color: #fff;
+  background-color: rgb(0, 0, 0);
 }
 
 .campain-desc h1 {
@@ -201,8 +203,10 @@ header .header-mobile-none {
 }
 
 .promotion-list {
+  position: relative;
   display: flex;
   overflow: auto;
+  padding-bottom: 35px;
 }
 
 .promotion-list::-webkit-scrollbar {
@@ -330,6 +334,7 @@ header .header-mobile-none {
 .recommend-product-box {
   display: flex;
   overflow: auto;
+  padding-bottom: 35px;
 }
 
 .recommend-product-box::-webkit-scrollbar {
@@ -479,18 +484,17 @@ header .header-mobile-none {
   position: relative;
 }
 
-.new-product-img-list .new-product-info-1 {
+.new-product-info-1 {
   position: absolute;
   top: 57%;
   left: 27%;
   border: none;
   color: #d1d1d1;
   font-size: 30px;
-  transition: display 500ms ease-in-out;
 }
 
 .new-product-info-box-1 {
-  /* display: none; */
+  visibility: hidden;
   width: 135px;
   position: absolute;
   top: 50%;
@@ -499,8 +503,8 @@ header .header-mobile-none {
   padding: 10px 15px;
 }
 
-.new-product-img-list .new-product-info-1::focus .new-product-info-box-1 {
-  display: block;
+.new-product-info-1:focus ~ .new-product-info-box-1 {
+  visibility: visible;
 }
 
 .new-product-img-list .new-product-info-2 {
@@ -510,11 +514,10 @@ header .header-mobile-none {
   border: none;
   color: #d1d1d1;
   font-size: 30px;
-  transition: display 500ms ease-in-out;
 }
 
 .new-product-info-box-2 {
-  /* display: none; */
+  visibility: hidden;
   width: 135px;
   position: absolute;
   top: 50%;
@@ -523,8 +526,8 @@ header .header-mobile-none {
   padding: 10px 15px;
 }
 
-.new-product-img-list .new-product-info-2::focus .new-product-info-box-2 {
-  display: block;
+.new-product-info-2:focus ~ .new-product-info-box-2 {
+  visibility: visible;
 }
 
 .new-product-info-box-desc {
@@ -573,11 +576,15 @@ header .header-mobile-none {
   margin: 40px 20px;
 }
 
-.office-product h2 {
+.office-product .office-product-title {
   font-size: 18px;
   line-height: 1.4444444444;
   font-weight: 700;
   margin-bottom: 8px;
+}
+
+.office-product-img-box-list {
+  position: relative;
 }
 
 .office-product .office-product-desc {
@@ -592,6 +599,217 @@ header .header-mobile-none {
   width: 100%;
   height: 100%;
   margin-bottom: 5px;
+}
+
+.office-product-info-1 {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  border: none;
+  color: #d1d1d1;
+  font-size: 30px;
+}
+
+.office-product-info-2 {
+  position: absolute;
+  top: 48%;
+  left: 70%;
+  border: none;
+  color: #d1d1d1;
+  font-size: 30px;
+}
+
+.office-product-info-3 {
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  border: none;
+  color: #d1d1d1;
+  font-size: 30px;
+}
+
+.office-product-info-4 {
+  position: absolute;
+  top: 83%;
+  left: 65%;
+  border: none;
+  color: #d1d1d1;
+  font-size: 30px;
+}
+
+.office-product-info-5 {
+  position: absolute;
+  top: 33%;
+  left: 65%;
+  border: none;
+  color: #d1d1d1;
+  font-size: 30px;
+}
+
+.office-product-info-6 {
+  position: absolute;
+  top: 47%;
+  left: 43%;
+  border: none;
+  color: #d1d1d1;
+  font-size: 30px;
+}
+
+.office-product-info-7 {
+  position: absolute;
+  top: 60%;
+  left: 7%;
+  border: none;
+  color: #d1d1d1;
+  font-size: 30px;
+}
+.office-product-info-8 {
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  border: none;
+  color: #d1d1d1;
+  font-size: 30px;
+}
+
+.office-product-info-box-1 {
+  visibility: hidden;
+  width: 135px;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  background-color: #fff;
+  padding: 10px 15px;
+}
+
+.office-product-info-1:focus ~ .office-product-info-box-1 {
+  visibility: visible;
+}
+
+.office-product-info-box-2 {
+  visibility: hidden;
+  width: 135px;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  background-color: #fff;
+  padding: 10px 15px;
+}
+
+.office-product-info-2:focus ~ .office-product-info-box-2 {
+  visibility: visible;
+}
+
+.office-product-info-box-3 {
+  visibility: hidden;
+  width: 135px;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  background-color: #fff;
+  padding: 10px 15px;
+}
+
+.office-product-info-3:focus ~ .office-product-info-box-3 {
+  visibility: visible;
+}
+
+.office-product-info-box-4 {
+  visibility: hidden;
+  width: 135px;
+  position: absolute;
+  top: 70%;
+  left: 12%;
+  background-color: #fff;
+  padding: 10px 15px;
+}
+
+.office-product-info-4:focus ~ .office-product-info-box-4 {
+  visibility: visible;
+}
+
+.office-product-info-box-5 {
+  visibility: hidden;
+  width: 135px;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  background-color: #fff;
+  padding: 10px 15px;
+}
+
+.office-product-info-5:focus ~ .office-product-info-box-5 {
+  visibility: visible;
+}
+
+.office-product-info-box-6 {
+  visibility: hidden;
+  width: 135px;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  background-color: #fff;
+  padding: 10px 15px;
+}
+
+.office-product-info-6:focus ~ .office-product-info-box-6 {
+  visibility: visible;
+}
+
+.office-product-info-box-7 {
+  visibility: hidden;
+  width: 135px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  background-color: #fff;
+  padding: 10px 15px;
+}
+
+.office-product-info-7:focus ~ .office-product-info-box-7 {
+  visibility: visible;
+}
+
+.office-product-info-box-8 {
+  visibility: hidden;
+  width: 135px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  background-color: #fff;
+  padding: 10px 15px;
+}
+
+.office-product-info-8:focus ~ .office-product-info-box-8 {
+  visibility: visible;
+}
+
+.office-product-info-box-desc {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.office-product-info-box-desc h2 {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000;
+  margin: 0;
+}
+
+.office-product-info-box-price {
+  display: flex;
+}
+
+.office-product-info-box-price .fa-won-sign {
+  font-size: 10px;
+  margin-right: 1px;
+}
+
+.office-product-info-box-price p {
+  font-size: 16px;
+  line-height: 1.1875;
 }
 
 .office-product .office-product-deail-info {
@@ -622,6 +840,7 @@ header .header-mobile-none {
 .solution-box {
   display: flex;
   overflow: auto;
+  padding-bottom: 35px;
 }
 
 .solution-box::-webkit-scrollbar {
@@ -807,8 +1026,7 @@ header .header-mobile-none {
 }
 
 .home-furnishing-box::-webkit-scrollbar {
-  height: 3px;
-  border-radius: 64px;
+  display: none;
 }
 
 .home-furnishing-box:hover::-webkit-scrollbar {
@@ -873,6 +1091,7 @@ header .header-mobile-none {
   flex-shrink: 0;
   overflow: auto;
   margin: 40px 20px;
+  padding-bottom: 35px;
 }
 
 .detail-info::-webkit-scrollbar {
@@ -1210,7 +1429,6 @@ button {
     display: flex;
     flex-direction: column;
     padding: 80px;
-    background-color: #ffdb00;
   }
 
   .campain-desc h1 {
@@ -1374,7 +1592,7 @@ button {
     margin: 64px 48px;
   }
 
-  .office-product h2 {
+  .office-product .office-product-title {
     font-size: 25px;
     line-height: 1.36;
   }
@@ -1389,13 +1607,6 @@ button {
 
   .office-product-img-box a:last-child {
     margin-right: 0;
-  }
-
-  .office-product .office-product-desc {
-    font-size: 14px;
-    color: #484848;
-    line-height: 1.571;
-    margin-bottom: 32px;
   }
 
   .office-product img {
@@ -1415,6 +1626,37 @@ button {
     border: 1px solid #dfdfdf;
     border-radius: 84px;
     margin: 0;
+  }
+
+  .office-product-info-box-1 {
+    left: 35%;
+  }
+
+  .office-product-info-box-2 {
+    top: 35%;
+    left: 35%;
+  }
+
+  .office-product-info-box-3 {
+    top: 35%;
+  }
+
+  .office-product-info-box-4 {
+    left: 30%;
+  }
+
+  .office-product-info-box-5 {
+    top: 20%;
+    left: 30%;
+  }
+
+  .office-product-info-box-6 {
+    top: 27%;
+    left: 20%;
+  }
+
+  .office-product-info-box-8 {
+    left: 47%;
   }
 
   .office-product .fa-chevron-right {
@@ -1691,21 +1933,20 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     margin: 64px 40px 64px 120px;
   }
 
   .campain-img img {
     width: 100%;
-    height: 418px;
+    height: 100%;
+    object-fit: cover;
   }
 
   .campain-desc {
     display: flex;
     flex-direction: column;
     padding: 48px;
-    height: 418px;
-    background-color: #ffdb00;
+    height: 100%;
   }
 
   .campain-desc h1 {
@@ -1803,7 +2044,6 @@ button {
   }
 
   .home-furnishing .home-furnishing-img img {
-    /* display: inline-block; */
     width: 32.58%;
   }
 
@@ -1841,5 +2081,12 @@ button {
     bottom: 40px;
     border-radius: 50%;
     background-color: #fff;
+  }
+}
+
+/* Fix container width */
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 1500px !important;
   }
 }
