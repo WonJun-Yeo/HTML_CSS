@@ -1554,16 +1554,17 @@ button {
     display: flex;
   }
 
-  .new-product-img-box a {
+  .new-product-img-list {
     margin-right: 20px;
   }
 
-  .new-product-img-box a:last-child {
+  .new-product-img-list:last-child {
     margin-right: 0;
   }
 
   .new-product img {
     width: 100%;
+    margin-bottom: 0;
   }
 
   .new-product .new-product-deail-info {
@@ -1601,16 +1602,17 @@ button {
     display: flex;
   }
 
-  .office-product-img-box a {
+  .office-product-img-box-list {
     margin-right: 20px;
   }
 
-  .office-product-img-box a:last-child {
+  .office-product-img-box-list:last-child {
     margin-right: 0;
   }
 
   .office-product img {
     width: 100%;
+    margin-bottom: 0;
   }
 
   .office-product .office-product-deail-info {
@@ -1678,7 +1680,6 @@ button {
 
   .magazine-list {
     flex-direction: row;
-    justify-content: space-between;
     margin: 64px 48px;
   }
 
@@ -1687,6 +1688,7 @@ button {
   }
 
   .magazine-list-box {
+    width: 100%;
     margin-bottom: 0;
   }
 
@@ -2044,7 +2046,7 @@ button {
   }
 
   .home-furnishing .home-furnishing-img img {
-    width: 32.58%;
+    width: 32.5%;
   }
 
   /* detail-info */
@@ -2085,8 +2087,8 @@ button {
 }
 
 /* Fix container width */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1500px) {
   body {
-    max-width: 1500px !important;
+    max-width: 1800px !important;
   }
 }
