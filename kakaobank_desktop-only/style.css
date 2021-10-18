@@ -34,13 +34,15 @@ textarea {
   top: 0;
   z-index: 1;
   background-color: #fff;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .header-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1080px;
+  width: 100%;
   height: 100%;
   margin: auto;
 }
@@ -93,8 +95,7 @@ textarea {
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 1200px;
-  width: 100%;
-  height: 100%;
+  height: 884px;
   margin: auto;
 }
 
@@ -192,16 +193,17 @@ textarea {
 .mobile-img {
   position: absolute;
   top: 36px;
-  left: 100px;
+  left: 50%;
   display: inline-block;
   width: 473px;
   object-fit: cover;
+  margin-left: -500px;
 }
 
 .mobile-info {
   position: absolute;
   top: 220px;
-  left: 700px;
+  left: 50%;
   display: flex;
   flex-direction: column;
   width: 373px;
@@ -258,19 +260,21 @@ textarea {
 .save-img {
   position: absolute;
   top: 36px;
-  left: 720px;
+  left: 50%;
   display: inline-block;
   width: 409px;
   object-fit: cover;
+  margin-left: 120px;
 }
 
 .save-info {
   position: absolute;
   top: 220px;
-  left: 130px;
+  left: 50%;
   display: flex;
   flex-direction: column;
   width: 537px;
+  margin-left: -470px;
 }
 
 .save-title {
@@ -339,16 +343,17 @@ textarea {
 .assemble-img {
   position: absolute;
   top: 85px;
-  left: 115px;
+  right: 50%;
   display: inline-block;
   width: 459px;
   object-fit: cover;
+  margin-right: 24px;
 }
 
 .assemble-info {
   position: absolute;
   top: 220px;
-  left: 690px;
+  left: 50%;
   display: flex;
   flex-direction: column;
   width: 373px;
@@ -405,19 +410,21 @@ textarea {
 .challenge-img {
   position: absolute;
   top: 158px;
-  left: 640px;
+  left: 50%;
   display: inline-block;
   width: 492px;
   object-fit: cover;
+  margin-left: 40px;
 }
 
 .challenge-info {
   position: absolute;
   top: 210px;
-  left: 190px;
+  left: 50%;
   display: flex;
   flex-direction: column;
   width: 537px;
+  margin-left: -410px;
 }
 
 .challenge-title {
@@ -475,19 +482,21 @@ textarea {
 .global-img {
   position: absolute;
   top: 20px;
-  left: 168px;
+  right: 55%;
   display: inline-block;
   width: 408px;
   object-fit: cover;
+  margin-right: -40px;
 }
 
 .global-info {
   position: absolute;
   top: 200px;
-  left: 690px;
+  left: 50%;
   display: flex;
   flex-direction: column;
   width: 373px;
+  margin-left: 90px;
 }
 
 .global-title {
@@ -538,55 +547,58 @@ textarea {
 }
 
 .FINtech-title {
-  position: absolute;
-  top: 160px;
-  left: 430px;
-  width: 393px;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.35;
   text-align: center;
+  padding-top: 160px;
 }
 
 .division-line {
-  position: absolute;
-  top: 310px;
-  left: 580px;
+  display: block;
   background-color: #111;
   width: 100px;
   height: 3px;
   opacity: 0.7;
+  margin: 50px auto 140px;
 }
 
 .FINtech-desc-box {
-  position: absolute;
-  top: 460px;
-  left: 120px;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
 }
 
 .FINtech-desc-img {
   width: 1020px;
-  height: 270px;
-  margin-bottom: 45px;
-  object-fit: cover;
 }
 
 .FINtech-desc-list {
-  position: relative;
-  display: flex;
+  overflow: hidden;
+  width: 1020px;
+  margin: 0 auto;
 }
 
-.FINtech-desc-list-item {
-  text-align: center;
-  padding: 0 35px;
+.FINtech-desc-list-item:nth-child(1) {
+  float: left;
+  width: 25%;
+  height: 210px;
+}
+
+.FINtech-desc-list-item:nth-child(2) {
+  float: left;
+  width: 25%;
+  height: 210px;
+}
+
+.FINtech-desc-list-item:nth-child(3) {
+  float: left;
+  width: 25%;
+  height: 210px;
 }
 
 .FINtech-desc-list-item:last-child {
-  position: absolute;
-  right: 0;
-  padding: 0 15px;
+  float: left;
+  width: 25%;
+  height: 210px;
 }
 
 .FINtech-desc-list-item h2 {
@@ -607,18 +619,18 @@ textarea {
 
 .footer {
   position: relative;
-  width: 100%;
   background-color: #eee;
 }
 
 .footer-back {
-  max-width: 1200px;
   height: 160px;
   margin: auto;
 }
+
 .footer-detail-info {
   position: absolute;
   top: 37px;
+  margin: 0 20px;
 }
 
 .footer-detail-info-list {
@@ -648,6 +660,7 @@ textarea {
   position: absolute;
   top: 60px;
   display: flex;
+  margin: 0 20px;
 }
 
 .comp-info-call {
@@ -670,11 +683,14 @@ textarea {
 }
 
 .comp-sns {
+  width: 100%;
   position: absolute;
   top: 100px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   white-space: nowrap;
+  padding: 0 20px;
 }
 
 .guarantee {
@@ -682,7 +698,6 @@ textarea {
   align-items: center;
   font-size: 12px;
   line-height: 1.5;
-  margin-right: 930.04px;
 }
 
 .guarantee-img {
