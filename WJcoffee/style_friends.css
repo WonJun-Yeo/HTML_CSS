@@ -3,6 +3,7 @@
   margin: 0;
   font-family: "Noto Sans", sans-serif;
   color: inherit;
+  word-break: break-all;
 }
 
 ul,
@@ -172,8 +173,8 @@ header {
 
 .grade-wraper {
   width: 100%;
-  background-color: rgb(204, 192, 185);
-  padding: 0 30px;
+  background-color: #f5f0e9;
+  padding: 0 80px;
 }
 
 .grade {
@@ -226,7 +227,7 @@ header {
 
 .grade-desc-list-item {
   width: 200px;
-  height: 50px;
+  height: 100px;
   text-align: center;
 }
 
@@ -238,6 +239,276 @@ header {
 
 .grade-explain strong {
   line-height: 2;
+}
+
+/* explain */
+
+.explain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #f5f0e9;
+  padding: 0 80px;
+}
+
+.dolpin-explain {
+  width: 100%;
+  text-align: center;
+}
+
+.dolpin-explain .fa-water {
+  width: 100%;
+  color: #5dacbd;
+  padding-top: 60px;
+}
+
+.Dolpin-explain-title {
+  font-size: 22px;
+  color: #382e2c;
+  font-weight: 700;
+}
+
+.dolpin-explain-desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 20px 0 45px;
+}
+
+.Dolpin-Benefits-expain {
+  text-align: center;
+  width: 100%;
+}
+
+.Dolpin-Benefits-expain .fa-water {
+  color: #5dacbd;
+}
+
+.dolpin-Benefits-expain-title {
+  font-size: 22px;
+  color: #382e2c;
+  font-weight: 700;
+}
+
+.Dolpin-Benefits-list {
+  padding: 20px 0 45px;
+}
+
+.Dolpin-Benefits-list-item {
+  display: inline-block;
+  position: relative;
+  width: 430px;
+  height: 122px;
+  border-bottom: 1px solid #111;
+  margin-bottom: 10px;
+}
+
+.Dolpin-Benefits-list-item:nth-child(2n-1) {
+  margin-right: 30px;
+}
+
+.Dolpin-Benefits-list-item h2 {
+  margin-bottom: 5px;
+  font-size: 22px;
+  color: #5dacbd;
+}
+
+.Dolpin-Benefits-list-item p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.Dolpin-Benefits-list-item .fas {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 50px;
+}
+
+.card {
+  padding: 0 80px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.card-title {
+  padding-top: 50px;
+  font-size: 34px;
+  color: #382e2c;
+}
+
+.card-desc {
+  padding-top: 10px;
+  font-size: 16px;
+  color: #62605f;
+}
+
+.card-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+.card-list-item {
+  text-align: center;
+  width: 240px;
+  height: 250px;
+  margin-bottom: 50px;
+}
+
+.card-list-item .fas {
+  font-size: 50px;
+  text-align: center;
+  padding: 50px;
+  border-radius: 50%;
+  background-color: #f6f6f6;
+  margin-bottom: 20px;
+}
+
+.card-list-item h2 {
+  margin-bottom: 5px;
+  font-size: 22px;
+  color: #5dacbd;
+}
+
+.card-list-item p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* card-detail-info */
+
+.card-detail-info {
+  width: 100%;
+  padding: 80px;
+}
+
+.card-detail-info-list {
+  width: 100%;
+  border-top: 2px solid #111;
+}
+
+.card-detail-info-list-item {
+  width: 100%;
+}
+
+.card-detail-info-list-item button {
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+
+.card-detail-info-list-item button .fa-plus {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.card-detail-info-list-item button:focus .fa-plus {
+  display: none;
+}
+
+.card-detail-info-list-item button h1 {
+  font-size: 20px;
+  color: #382e2c;
+  padding: 20px;
+  border-bottom: 1px solid #62605f;
+}
+
+.card-detail-info-list-item-hidden {
+  height: 0;
+  overflow: hidden;
+  transition: all 500ms ease-in-out;
+}
+
+.card-detail-info-list-item-hidden li {
+  display: flex;
+  border-bottom: 1px solid #62605f;
+}
+
+.card-detail-info-list-item-hidden h2 {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  font-weight: 400;
+  padding: 20px;
+  background-color: #e2dfdc;
+}
+
+.card-detail-info-list-item-hidden p {
+  padding: 20px;
+  width: 70%;
+}
+
+.card-detail-info-list-item:nth-child(1)
+  button:focus
+  .card-detail-info-list-item-hidden {
+  height: 569px;
+}
+
+.card-detail-info-list-item:nth-child(2)
+  button:focus
+  .card-detail-info-list-item-hidden {
+  height: 205px;
+}
+
+.card-detail-info-list-item:nth-child(3)
+  button:focus
+  .card-detail-info-list-item-hidden {
+  height: 248px;
+}
+
+.card-detail-info-list-item:nth-child(4)
+  button:focus
+  .card-detail-info-list-item-hidden {
+  height: 211px;
+}
+
+/* center-info */
+
+.center-info {
+  width: 100%;
+  padding: 0 80px 80px 80px;
+}
+
+.center-info .fa-water {
+  color: #5dacbd;
+}
+
+.center-info-title {
+  font-size: 22px;
+  color: #382e2c;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.center-info-desc {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.center-info-list {
+  display: flex;
+}
+
+.center-info-list-item {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.center-info-list-item .fas {
+  font-size: 35px;
+  margin-right: 15px;
+}
+
+.center-info-list-item p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #5dacbd;
 }
 
 /* footer */
