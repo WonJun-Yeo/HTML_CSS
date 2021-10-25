@@ -33,7 +33,7 @@ textarea {
 
 .header-wraper {
   width: 100%;
-  height: 110px;
+  position: relative;
 }
 
 header {
@@ -42,7 +42,7 @@ header {
   left: 0;
   width: 100%;
   height: 110px;
-  background-color: #111;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
 }
 
@@ -54,6 +54,26 @@ header {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+.header-phrases {
+  position: absolute;
+  top: 250px;
+  left: 100px;
+}
+
+.header-title {
+  display: inline-block;
+  font-size: 45px;
+  line-height: 1.5;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.header-desc {
+  font-size: 30px;
+  color: #fff;
+  line-height: 1.5;
 }
 
 .header-login {
@@ -98,18 +118,63 @@ header {
   margin-right: 5px;
 }
 
+.header-list-wraper {
+  width: 100%;
+  height: 100%;
+  padding-top: 70px;
+}
+
 .header-list {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  padding-top: 45px;
 }
 
 .header-list-item {
+  width: 200px;
   color: #fff;
-  padding: 0 50px;
+  padding: 0 10px;
+  transition: all 250ms ease-in-out;
+}
+
+.header-list-item:hover {
+  font-size: 20px;
+}
+
+.header-hover-list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: all 250ms ease-in-out;
+  z-index: 100;
+  padding-top: 20px;
+}
+
+.header-hover-list-item {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  font-size: 14px;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.header-hover-list-item a {
+  transition: all 250ms ease-in-out;
+  padding-bottom: 10px;
+}
+
+.header-list-wraper:hover .header-hover-list {
+  height: 120px;
+}
+
+.header-hover-list-item a:hover {
+  font-size: 16px;
 }
 
 /* banner */
@@ -138,7 +203,6 @@ header {
   font-weight: 700;
   color: #fff;
   z-index: 50;
-  padding-bottom: 180px;
 }
 
 /* main */

@@ -13,6 +13,7 @@
       src="https://kit.fontawesome.com/518dea5592.js"
       crossorigin="anonymous"
     ></script>
+
     <title>WJ_coffee</title>
   </head>
   <body>
@@ -34,14 +35,35 @@
             <a href="#"><i class="fas fa-coffee"></i>남품문의</a>
           </li>
         </ul>
-        <ul class="header-list">
-          <li class="header-list-item"><a href="#">ABOUT US</a></li>
-          <li class="header-list-item"><a href="#">MENU</a></li>
-          <li class="header-list-item"><a href="#">STORE</a></li>
-          <li class="header-list-item"><a href="#">FRIENDS</a></li>
-          <li class="header-list-item"><a href="#">NEWS</a></li>
-          <li class="header-list-item"><a href="#">FARM TO CUP</a></li>
-        </ul>
+        <div class="header-list-wraper">
+          <ul class="header-list">
+            <li class="header-list-item"><a href="#">ABOUT US</a></li>
+            <li class="header-list-item"><a href="#">MENU</a></li>
+            <li class="header-list-item"><a href="#">STORE</a></li>
+            <li class="header-list-item"><a href="#">FRIENDS</a></li>
+            <li class="header-list-item"><a href="#">NEWS</a></li>
+            <li class="header-list-item"><a href="#">FARM TO CUP</a></li>
+          </ul>
+          <ul class="header-hover-list">
+            <li class="header-hover-list-item">
+              <a href="#">Brand</a><a href="#">Franchise</a>
+            </li>
+            <li class="header-hover-list-item">
+              <a href="#">Coffee</a><a href="#">Bread &amp; Dessert</a
+              ><a href="#">Seasonal Drink</a>
+            </li>
+            <li class="header-hover-list-item"><a href="#">매장찾기</a></li>
+            <li class="header-hover-list-item">
+              <a href="#">Dolpin Benefits</a><a href="#">W.J 카드</a>
+            </li>
+            <li class="header-hover-list-item">
+              <a href="#">Event</a><a href="#">Notice</a>
+            </li>
+            <li class="header-hover-list-item">
+              <a href="#">Process</a><a href="#">Sample</a>
+            </li>
+          </ul>
+        </div>
       </header>
       <span class="header-phrases">
         <div class="header-title">Coffee together</div>
@@ -56,13 +78,27 @@
       <section class="info">
         <div class="info-notice">
           <h1 class="info-notice-title">공지사항</h1>
-          <p class="info-notice-desc">시스템 개선 및 점검 안내</p>
-          <a href="#" class="info-notice-button"><button><i class="fas fa-plus"></i></button></a>
+          <p class="info-notice-desc">
+            <a href="#">시즌 음료 미판매점 안내</a>
+            <a href="#">W.J coffee 음료별 카페인 함량 안내</a>
+            <a href="#">membership 정책 개편 안내</a>
+            <a href="#">시즌 음료 미판매점 안내</a>
+          </p>
+          <a href="#" class="info-notice-button"
+            ><button><i class="fas fa-plus"></i></button
+          ></a>
         </div>
         <div class="info-promotion">
-          <h1 class="info-promotion-title">프로모션</h1>
-          <p class="info-promotion-desc">W.J 스마트스토어 OPEN</p>
-          <a href="#" class="info-promotion-button"><button><i class="fas fa-plus"></i></button></a>
+          <h1 class="info-promotion-title">이벤트</h1>
+          <p class="info-promotion-desc">
+            <a href="#">10월 12일, 2021 할로윈 펌킨 카드 출시</a>
+            <a href="#">9월 15일, 제주 담은 겨울 음료 출시</a>
+            <a href="#">W.J coffee 메뉴 키프티카드 선물 이벤트</a>
+            <a href="#">10월 12일, 2021 할로윈 펌킨 카드 출시</a>
+          </p>
+          <a href="#" class="info-promotion-button"
+            ><button><i class="fas fa-plus"></i></button
+          ></a>
         </div>
       </section>
     </div>
@@ -107,11 +143,36 @@
       <section class="menu">
         <ul class="menu-list">
           <li class="menu-list-new-item">
-            <a href="#"
-              ><div>
-                <h1 class="menu-list-new-item-title">New menu</h1>
-                <p class="menu-list-new-item-desc">My Favorite DELIBREAD</p>
-                <button type="button" class="menu-list-new-item-button">more</button>
+            <a href="#">
+              <h1 class="menu-list-new-item-title">New menu</h1>
+              <p class="menu-list-new-item-desc">My Favorite DELIBREAD</p>
+              <div class="menu-sns-list-wraper">
+                <ol class="menu-sns-list">
+                  <li class="menu-sns-list-item">
+                    <img src="./assets/menu-sns-img-1.webp" alt="" />
+                    <p>가</p>
+                  </li>
+                  <li class="menu-sns-list-item">
+                    <img src="./assets/menu-sns-img-2.webp" alt="" />
+                    <p>나</p>
+                  </li>
+                  <li class="menu-sns-list-item">
+                    <img src="./assets/menu-sns-img-3.webp" alt="" />
+                    <p>다</p>
+                  </li>
+                  <li class="menu-sns-list-item">
+                    <img src="./assets/menu-sns-img-4.webp" alt="" />
+                    <p>라</p>
+                  </li>
+                  <li class="menu-sns-list-item">
+                    <img src="./assets/menu-sns-img-1.webp" alt="" />
+                    <p>가</p>
+                  </li>
+                </ol>
+              </div>
+              <button type="button" class="menu-list-new-item-button">
+                more
+              </button>
             </a>
           </li>
           <li class="menu-list-item">
@@ -124,9 +185,11 @@
                   alt=""
                   class="menu-list-item-img"
                 />
-                <button type="button" class="menu-list-item-button">more</button>
-                </div
-            ></a>
+                <button type="button" class="menu-list-item-button">
+                  more
+                </button>
+              </div></a
+            >
           </li>
           <li class="menu-list-item">
             <a href="#"
@@ -138,7 +201,9 @@
                   alt=""
                   class="menu-list-item-img"
                 />
-                <button type="button" class="menu-list-item-button">more</button>
+                <button type="button" class="menu-list-item-button">
+                  more
+                </button>
               </div></a
             >
           </li>
@@ -152,22 +217,26 @@
                   alt=""
                   class="menu-list-item-img"
                 />
-                <button type="button" class="menu-list-item-button">more</button>
+                <button type="button" class="menu-list-item-button">
+                  more
+                </button>
               </div></a
             >
           </li>
           <li class="menu-list-item">
             <a href="#"
               ><div>
-                <h1 class="menu-list-item-title">MD</h1>
+                <h1 class="menu-list-item-title">Gift</h1>
                 <p class="menu-list-item-desc">언제 어디서나, WJ coffee</p>
-                  <img
+                <img
                   src="./assets/menu-img-4.webp"
                   alt=""
                   class="menu-list-item-img"
                 />
-                <button type="button" class="menu-list-item-button">more</button>
-                </div>
+                <button type="button" class="menu-list-item-button">
+                  more
+                </button>
+              </div>
             </a>
           </li>
         </ul>
@@ -197,7 +266,7 @@
           </div>
         </div>
         <div class="store-finder-detail-info">
-          <p>자세히 보기</p>
+          <a href="#"><p>자세히 보기</p></a>
         </div>
       </section>
     </div>

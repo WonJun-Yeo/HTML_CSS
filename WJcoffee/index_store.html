@@ -34,15 +34,44 @@
             <a href="#"><i class="fas fa-coffee"></i>남품문의</a>
           </li>
         </ul>
-        <ul class="header-list">
-          <li class="header-list-item"><a href="#">ABOUT US</a></li>
-          <li class="header-list-item"><a href="#">MENU</a></li>
-          <li class="header-list-item"><a href="#">SRORE</a></li>
-          <li class="header-list-item"><a href="#">FRIENDS</a></li>
-          <li class="header-list-item"><a href="#">NEWS</a></li>
-          <li class="header-list-item"><a href="#">FARM TO CUP</a></li>
-        </ul>
+        <div class="header-list-wraper">
+          <ul class="header-list">
+            <li class="header-list-item"><a href="#">ABOUT US</a></li>
+            <li class="header-list-item"><a href="#">MENU</a></li>
+            <li class="header-list-item"><a href="#">STORE</a></li>
+            <li class="header-list-item"><a href="#">FRIENDS</a></li>
+            <li class="header-list-item"><a href="#">NEWS</a></li>
+            <li class="header-list-item"><a href="#">FARM TO CUP</a></li>
+          </ul>
+          <ul class="header-hover-list">
+            <li class="header-hover-list-item">
+              <a href="#">Brand</a><a href="#">Franchise</a>
+            </li>
+            <li class="header-hover-list-item">
+              <a href="#">Coffee</a><a href="#">Bread &amp; Dessert</a
+              ><a href="#">Seasonal Drink</a>
+            </li>
+            <li class="header-hover-list-item"><a href="#">매장찾기</a></li>
+            <li class="header-hover-list-item">
+              <a href="#">Dolpin Benefits</a><a href="#">W.J 카드</a>
+            </li>
+            <li class="header-hover-list-item">
+              <a href="#">Event</a><a href="#">Notice</a>
+            </li>
+            <li class="header-hover-list-item">
+              <a href="#">Process</a><a href="#">Sample</a>
+            </li>
+          </ul>
+        </div>
       </header>
+      <span class="header-phrases">
+        <div class="header-title">Coffee together</div>
+        <p class="header-desc">
+          하루를 시작하는 커피<br />
+          WJ coffee 이기를 바램<br />
+          매일 아침에 만나요
+        </p>
+      </span>
     </div>
     <div class="banner-wraper">
       <section class="banner">
@@ -62,7 +91,7 @@
               name="cities"
               onchange="addressKindChange(this)"
             >
-              <option value="all">전체</option>
+              <option value="All">전체</option>
               <option value="Seoul">서울특별시</option>
               <option value="Gyeonggi">경기도</option>
               <option value="Incheon">인천광역시</option>
@@ -159,6 +188,7 @@
     </footer>
     <script>
       function addressKindChange(e) {
+        var All = ["전체"];
         var Seoul = [
           "강남구",
           "강동구",
@@ -402,7 +432,8 @@
         ];
         var target = document.getElementById("provinces");
 
-        if (e.value == "Seoul") var d = Seoul;
+        if (e.value == "All") var d = All;
+        else if (e.value == "Seoul") var d = Seoul;
         else if (e.value == "Gyeonggi") var d = Gyeonggi;
         else if (e.value == "Incheon") var d = Incheon;
         else if (e.value == "Daejeon") var d = Daejeon;
