@@ -3,7 +3,7 @@
   margin: 0;
   font-family: "Noto Sans", sans-serif;
   color: inherit;
-  word-break: break-all;
+  word-break: keep-all;
 }
 
 ul,
@@ -54,26 +54,6 @@ header {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-}
-
-.header-phrases {
-  position: absolute;
-  top: 250px;
-  left: 100px;
-}
-
-.header-title {
-  display: inline-block;
-  font-size: 45px;
-  line-height: 1.5;
-  color: #fff;
-  padding-bottom: 20px;
-}
-
-.header-desc {
-  font-size: 30px;
-  color: #fff;
-  line-height: 1.5;
 }
 
 .header-login {
@@ -177,6 +157,77 @@ header {
   font-size: 16px;
 }
 
+.mark-menu {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 100;
+  font-size: 18px;
+  visibility: hidden;
+}
+
+.mark-menu-header-img {
+  width: 100px;
+  margin: 0 50px;
+  border-radius: 50%;
+  border: 2px solid #585858;
+}
+
+.mark-menu-list {
+  visibility: hidden;
+  width: 100%;
+  height: 0;
+  color: #5dacbd;
+  background-color: #fff;
+  border-radius: 8px;
+  transition: all 500ms ease;
+  overflow: hidden;
+  border: 1px solid #111;
+}
+
+.mark-menu-list.active {
+  visibility: visible;
+  height: 350px;
+  transition: all 500ms ease;
+}
+
+.mark-menu-list-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  background-color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.mark-menu-list-header div {
+  width: 50%;
+  text-align: center;
+}
+
+.mark-menu-list-header div:nth-child(2) {
+  border-left: 1px solid #585858;
+}
+
+.mark-menu-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #fff;
+}
+
+.mark-menu-list-item:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.mark-menu-list-item:last-child button {
+  font-size: 18px;
+}
+
 /* banner */
 
 .banner-wraper {
@@ -266,6 +317,26 @@ header {
   padding-top: 30px;
 }
 
+.list-box {
+  width: 100%;
+  overflow: auto;
+}
+
+.list-box::-webkit-scrollbar {
+  height: 5px;
+  border-radius: 64px;
+}
+
+.list-box::-webkit-scrollbar-thumb {
+  background-color: #111;
+  border-radius: 64px;
+}
+
+.list-box::-webkit-scrollbar-track {
+  background-color: #8a8a8a;
+  border-radius: 64px;
+}
+
 .grade-list {
   display: flex;
   justify-content: space-between;
@@ -276,6 +347,7 @@ header {
 .grade-list-item {
   width: 200px;
   height: 200px;
+  flex-shrink: 0;
 }
 
 .grade-list-item-img {
@@ -294,6 +366,7 @@ header {
   width: 200px;
   height: 100px;
   text-align: center;
+  flex-shrink: 0;
 }
 
 .grade-explain {
@@ -314,7 +387,6 @@ header {
   align-items: center;
   width: 100%;
   background-color: #f5f0e9;
-  padding: 0 80px;
 }
 
 .dolpin-explain {
@@ -357,20 +429,21 @@ header {
 }
 
 .Dolpin-Benefits-list {
+  width: 100%;
   padding: 20px 0 45px;
 }
 
 .Dolpin-Benefits-list-item {
   display: inline-block;
   position: relative;
-  width: 430px;
+  width: 48%;
   height: 122px;
   border-bottom: 1px solid #111;
-  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .Dolpin-Benefits-list-item:nth-child(2n-1) {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .Dolpin-Benefits-list-item h2 {
@@ -412,8 +485,24 @@ header {
 
 .card-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding-top: 70px;
+  overflow: auto;
+}
+
+.card-list::-webkit-scrollbar {
+  height: 5px;
+  border-radius: 64px;
+}
+
+.card-list::-webkit-scrollbar-thumb {
+  background-color: #111;
+  border-radius: 64px;
+}
+
+.card-list::-webkit-scrollbar-track {
+  background-color: #8a8a8a;
+  border-radius: 64px;
 }
 
 .card-list-item {
@@ -421,6 +510,7 @@ header {
   width: 240px;
   height: 250px;
   margin-bottom: 50px;
+  flex-shrink: 0;
 }
 
 .card-list-item .fas {
@@ -457,6 +547,8 @@ header {
 
 .card-detail-info-list-item {
   width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 .card-detail-info-list-item button {
@@ -484,9 +576,8 @@ header {
 }
 
 .card-detail-info-list-item-hidden {
+  visibility: hidden;
   height: 0;
-  overflow: hidden;
-  transition: all 500ms ease-in-out;
 }
 
 .card-detail-info-list-item-hidden li {
@@ -508,28 +599,9 @@ header {
   width: 70%;
 }
 
-.card-detail-info-list-item:nth-child(1)
-  button:focus
-  .card-detail-info-list-item-hidden {
-  height: 569px;
-}
-
-.card-detail-info-list-item:nth-child(2)
-  button:focus
-  .card-detail-info-list-item-hidden {
-  height: 205px;
-}
-
-.card-detail-info-list-item:nth-child(3)
-  button:focus
-  .card-detail-info-list-item-hidden {
-  height: 248px;
-}
-
-.card-detail-info-list-item:nth-child(4)
-  button:focus
-  .card-detail-info-list-item-hidden {
-  height: 211px;
+.card-detail-info-list-item button:focus .card-detail-info-list-item-hidden {
+  height: 100%;
+  visibility: visible;
 }
 
 /* center-info */
@@ -643,4 +715,73 @@ footer {
 
 .footer-sns-list .fab {
   color: #111;
+}
+
+@media screen and (max-width: 1200px) {
+  /* header */
+
+  header {
+    width: 0;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .mark-menu {
+    visibility: visible;
+  }
+
+  /* grade */
+
+  .grade-title {
+    font-size: 30px;
+  }
+
+  .grade-title strong {
+    font-size: 50px;
+  }
+
+  .grade-desc {
+    font-size: 14px;
+  }
+
+  .list-box {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .grade-list {
+    padding: 0;
+  }
+
+  .grade-desc-list {
+    padding: 0;
+  }
+
+  .grade-explain {
+    font-size: 14px;
+  }
+
+  /* center-info */
+
+  .center-info {
+    padding: 0 80px 50px 80px;
+  }
+
+  .center-info-list {
+    flex-direction: column;
+  }
+
+  .center-info-list-item {
+    margin-right: 0;
+  }
+
+  .center-info-list-item:nth-child(1) {
+    margin-bottom: 20px;
+  }
+
+  /* footer */
+
+  .footer-sns {
+    transform: translateY(-20%);
+  }
 }

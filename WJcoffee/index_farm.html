@@ -64,14 +64,23 @@
           </ul>
         </div>
       </header>
-      <span class="header-phrases">
-        <div class="header-title">Coffee together</div>
-        <p class="header-desc">
-          하루를 시작하는 커피<br />
-          WJ coffee 이기를 바램<br />
-          매일 아침에 만나요
-        </p>
-      </span>
+      <div class="mark-menu">
+        <button type="button" id="dropdown">
+          <img src="./assets/logo.png" alt="" class="mark-menu-header-img" />
+        </button>
+        <ol class="mark-menu-list">
+          <li class="mark-menu-list-header">
+            <div><a href="#">LOGIN</a></div>
+            <div><a href="#">JOIN</a></div>
+          </li>
+          <li class="mark-menu-list-item"><a href="#">ABOUT US</a></li>
+          <li class="mark-menu-list-item"><a href="#">MENU</a></li>
+          <li class="mark-menu-list-item"><a href="#">STORE</a></li>
+          <li class="mark-menu-list-item"><a href="#">FRIENDS</a></li>
+          <li class="mark-menu-list-item"><a href="#">NEWS</a></li>
+          <li class="mark-menu-list-item"><a href="#">FARM TO CUP</a></li>
+        </ol>
+      </div>
     </div>
     <div class="banner-wraper">
       <section class="banner">
@@ -86,23 +95,23 @@
       <ol class="process-list">
         <li class="process-list-item">
           <img src="./assets/Farm/process-img-1.jpg" alt="" / class="img">
-          <img src="./assets/Farm/process-img-1(2).jpg" alt="" class="hidden" />
           <p>생두 산지 직거래 및 Q.C</p>
+          <img src="./assets/Farm/process-img-1(2).jpg" alt="" class="hidden" />
         </li>
         <li class="process-list-item">
           <img src="./assets/Farm/process-img-2.jpg" alt="" class="img" />
-          <img src="./assets/Farm/process-img-2(2).jpg" alt="" class="hidden" />
           <p>냉장 컨테이너 운송</p>
+          <img src="./assets/Farm/process-img-2(2).jpg" alt="" class="hidden" />
         </li>
         <li class="process-list-item">
           <img src="./assets/Farm/process-img-3.jpg" alt="" class="img" />
-          <img src="./assets/Farm/process-img-3(2).jpg" alt="" class="hidden" />
           <p>생두 전용 창고 운송</p>
+          <img src="./assets/Farm/process-img-3(2).jpg" alt="" class="hidden" />
         </li>
         <li class="process-list-item">
           <img src="./assets/Farm/process-img-4.jpg" alt="" class="img" />
-          <img src="./assets/Farm/process-img-4(2).jpg" alt="" class="hidden" />
           <p>30년 로스팅 노하우</p>
+          <img src="./assets/Farm/process-img-4(2).jpg" alt="" class="hidden" />
         </li>
       </ol>
     </div>
@@ -128,7 +137,7 @@
     <div class="advice">
       <div class="advice-list">
         <button>
-          <a href="#"><i class="far fa-envelope"></i>원두 샘플 요청</a>
+          <a href="#"><i class="far fa-envelope"></i>원두 샘플 요청하기</a>
         </button>
         <p>샘플 요청서에 사업자등록증 첨부시, 샘플 제공이 가능합니다.</p>
       </div>
@@ -175,5 +184,21 @@
         </li>
       </ul>
     </footer>
+    <script>
+      let isShow = true;
+      document
+        .getElementById("dropdown")
+        .addEventListener("click", function () {
+          if (isShow) {
+            document.querySelector(".mark-menu-list").classList.add("active");
+            isShow = false;
+          } else {
+            document
+              .querySelector(".mark-menu-list")
+              .classList.remove("active");
+            isShow = true;
+          }
+        });
+    </script>
   </body>
 </html>
