@@ -65,6 +65,23 @@
           </ul>
         </div>
       </header>
+      <div class="mark-menu">
+        <button type="button" id="dropdown">
+          <img src="./assets/logo.png" alt="" class="mark-menu-header-img" />
+        </button>
+        <ol class="mark-menu-list">
+          <li class="mark-menu-list-header">
+            <div><a href="#">LOGIN</a></div>
+            <div><a href="#">JOIN</a></div>
+          </li>
+          <li class="mark-menu-list-item"><a href="#">ABOUT US</a></li>
+          <li class="mark-menu-list-item"><a href="#">MENU</a></li>
+          <li class="mark-menu-list-item"><a href="#">STORE</a></li>
+          <li class="mark-menu-list-item"><a href="#">FRIENDS</a></li>
+          <li class="mark-menu-list-item"><a href="#">NEWS</a></li>
+          <li class="mark-menu-list-item"><a href="#">FARM TO CUP</a></li>
+        </ol>
+      </div>
       <span class="header-phrases">
         <div class="header-title">Coffee together</div>
         <p class="header-desc">
@@ -312,5 +329,21 @@
         </li>
       </ul>
     </footer>
+    <script>
+      let isShow = true;
+      document
+        .getElementById("dropdown")
+        .addEventListener("click", function () {
+          if (isShow) {
+            document.querySelector(".mark-menu-list").classList.add("active");
+            isShow = false;
+          } else {
+            document
+              .querySelector(".mark-menu-list")
+              .classList.remove("active");
+            isShow = true;
+          }
+        });
+    </script>
   </body>
 </html>
