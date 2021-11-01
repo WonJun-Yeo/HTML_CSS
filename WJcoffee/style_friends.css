@@ -785,3 +785,262 @@ footer {
     transform: translateY(-20%);
   }
 }
+
+/* smart phone */
+
+@media screen and (max-width: 768px) {
+  /* header */
+
+  header {
+    width: 0;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .mark-menu {
+    visibility: visible;
+  }
+
+  .mark-menu {
+    top: 20px;
+    right: -40px;
+    font-size: 16px;
+  }
+
+  .mark-menu-header-img {
+    width: 60px;
+  }
+
+  .mark-menu-list {
+    position: absolute;
+    top: 65px;
+    right: 50px;
+  }
+
+  .mark-menu-list.active {
+    height: 282px;
+  }
+
+  .mark-menu-list-header {
+    height: 40px;
+  }
+
+  .mark-menu-list-item {
+    height: 40px;
+  }
+
+  /* banner */
+
+  .banner-title {
+    text-align: center;
+    font-size: 45px;
+  }
+
+  .banner-desc {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .banner-logo {
+    display: none;
+  }
+
+  .banner-logo-division {
+    display: none;
+  }
+
+  /* grade */
+
+  .grade-wraper {
+    padding: 0 20px;
+  }
+
+  .grade-title {
+    font-size: 25px;
+  }
+
+  .grade-title strong {
+    font-size: 30px;
+  }
+
+  .grade-desc {
+    font-size: 14px;
+  }
+
+  .list-box {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .grade-list {
+    padding: 0;
+  }
+
+  .grade-desc-list {
+    padding: 0;
+  }
+
+  .grade-explain {
+    font-size: 14px;
+  }
+
+  .dolpin-explain-desc {
+    font-size: 14px;
+    padding: 20px 0 40px;
+  }
+
+  .Dolpin-Benefits-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .Dolpin-Benefits-list-item {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .Dolpin-Benefits-list-item:nth-child(2n-1) {
+    margin-right: 0;
+  }
+
+  .Dolpin-Benefits-list-item p {
+    margin-bottom: 30px;
+  }
+
+  .Dolpin-Benefits-list-item .fas {
+    font-size: 40px;
+  }
+
+  .card {
+    padding: 0 20px;
+  }
+
+  .card-title {
+    font-size: 30px;
+  }
+
+  .card-desc {
+    font-size: 14px;
+  }
+
+  .card-list {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+  }
+
+  /* card-detail-info */
+
+  .card-detail-info {
+    padding: 0 30px 30px;
+  }
+
+  .card-detail-info-list-item button h1 {
+    font-size: 16px;
+    color: #382e2c;
+    padding: 20px 0;
+  }
+
+  .card-detail-info-list-item-hidden li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-detail-info-list-item-hidden h2 {
+    justify-content: center;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .card-detail-info-list-item-hidden p {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  /* center-info */
+
+  .center-info {
+    width: 100%;
+    padding: 0 30px 30px 30px;
+  }
+
+  .center-info .fa-water {
+    display: none;
+  }
+
+  .center-info-title {
+    text-align: center;
+  }
+
+  .center-info-desc {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .center-info-list {
+    justify-content: center;
+    align-items: center;
+  }
+  .center-info-list-item {
+    width: 100%;
+  }
+
+  .center-info-list-item .fas {
+    font-size: 35px;
+  }
+
+  .center-info-list-item p {
+    font-size: 16px;
+  }
+
+  /* footer */
+
+  footer {
+    height: auto;
+    padding: 80px 10px 30px 10px;
+  }
+
+  .footer-deail-info {
+    display: block;
+  }
+
+  .footer-deail-info-list {
+    display: inline-block;
+    font-size: 10px;
+  }
+
+  .footer-comp-info {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .footer-comp-info-list {
+    display: inline-block;
+    font-size: 10px;
+    white-space: normal;
+  }
+
+  .footer-sns {
+    top: 25px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .footer-sns-list {
+    transition: font-size 200ms ease-in-out;
+  }
+
+  .footer-sns-list:hover {
+    font-size: 16px;
+  }
+
+  .footer-sns-list:active {
+    font-size: 20px;
+  }
+}

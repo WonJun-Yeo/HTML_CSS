@@ -225,10 +225,6 @@ header {
   border-bottom-right-radius: 8px;
 }
 
-.mark-menu-list-item:last-child button {
-  font-size: 18px;
-}
-
 /* banner */
 
 .banner {
@@ -430,6 +426,8 @@ footer {
   color: #111;
 }
 
+/* tablet */
+
 @media screen and (max-width: 1200px) {
   /* header */
 
@@ -487,5 +485,127 @@ footer {
 
   .footer-sns {
     transform: translateY(-20%);
+  }
+}
+
+/* smart phone */
+
+@media screen and (max-width: 768px) {
+  /* header */
+  header {
+    width: 0;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .mark-menu {
+    visibility: visible;
+  }
+
+  .mark-menu {
+    top: 20px;
+    right: -40px;
+    font-size: 16px;
+  }
+
+  .mark-menu-header-img {
+    width: 60px;
+  }
+
+  .mark-menu-list {
+    position: absolute;
+    top: 65px;
+    right: 50px;
+  }
+
+  .mark-menu-list.active {
+    height: 282px;
+  }
+
+  .mark-menu-list-header {
+    height: 40px;
+  }
+
+  .mark-menu-list-item {
+    height: 40px;
+  }
+
+  /* banner */
+
+  .banner-title {
+    text-align: center;
+    font-size: 45px;
+  }
+
+  /* main */
+
+  .main-list-item-title {
+    font-size: 45px;
+  }
+
+  .main-list-item-paragraph h2 {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .main-list-item-desc {
+    font-size: 18px;
+  }
+
+  .main-button {
+    width: 200px;
+  }
+
+  .main-button .fas {
+    margin-right: 0;
+  }
+
+  .main-button:hover {
+    border-radius: 0;
+  }
+
+  /* footer */
+
+  footer {
+    height: auto;
+    padding: 80px 10px 30px 10px;
+  }
+
+  .footer-deail-info {
+    display: block;
+  }
+
+  .footer-deail-info-list {
+    display: inline-block;
+    font-size: 10px;
+  }
+
+  .footer-comp-info {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .footer-comp-info-list {
+    display: inline-block;
+    font-size: 10px;
+    white-space: normal;
+  }
+
+  .footer-sns {
+    top: 25px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .footer-sns-list {
+    transition: font-size 200ms ease-in-out;
+  }
+
+  .footer-sns-list:hover {
+    font-size: 16px;
+  }
+
+  .footer-sns-list:active {
+    font-size: 20px;
   }
 }
