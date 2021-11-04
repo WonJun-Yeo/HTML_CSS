@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  color: inherit;
+  font-family: "Roboto", sans-serif;
+  word-break: keep-all;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input,
+textarea {
+  background-color: inherit;
+  border: none;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none;
+  box-shadow: none;
+}
+
+/* banner */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  max-width: 1500px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #111;
+}
+
+.banner-title {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.banner-title .fa-play-circle {
+  color: rgb(63, 150, 114);
+  margin-right: 10px;
+}
+
+.banner-desc {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.banner-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 50px;
+  background-color: rgb(211, 95, 17);
+  border-radius: 8px;
+  transition: all 250ms ease-in-out;
+}
+
+.banner-link:hover {
+  font-size: 18px;
+}
+
+/* items */
+
+.items {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1500px;
+  padding: 60px;
+  margin: 0 auto;
+  color: #111;
+  background-color: #f8f8f8;
+}
+
+.items-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.items-list-item {
+  display: inline-block;
+  width: 350px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.items-list-item:nth-child(3) {
+  margin-right: 0;
+}
+
+.items-list-item .fas {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: rgb(255, 0, 0);
+}
+
+.items-list-item h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* appeal */
+
+.appeal {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.appeal-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.appeal-list-item {
+  width: 100%;
+  height: 800px;
+}
+
+.appeal-list-item:nth-child(1) {
+  background-image: url(./assets/appeal-img-1.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1500px;
+  padding: 60px;
+  margin: 0 auto;
+  color: #111;
+  background-color: #fff;
+}
+
+.footer-title {
+  width: 50%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer-info {
+  width: 50%;
+  font-size: 18px;
+}
+
+.footer-info-paragraph {
+  width: 250px;
+  margin: 0 auto;
+}
