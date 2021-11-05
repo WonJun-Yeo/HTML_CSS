@@ -13,6 +13,11 @@
       src="https://kit.fontawesome.com/518dea5592.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <title>portfolio</title>
   </head>
   <body>
@@ -24,24 +29,43 @@
       <p class="banner-desc">
         Coding Player를 이용해서 '여원준' 지원자의 작업물을 확인하세요
       </p>
-      <a href="#" class="banner-link">자세히 보기</a>
+      <button class="banner-link" id="banner-link">Click to Play</button>
+    </section>
+    <section class="player" id="player">
+      <div class="player-main" id="player-main">
+        <button type="button" class="player-close" id="player-close">
+          <i class="fas fa-window-close"></i>
+        </button>
+        <div class="player-img-box">
+          <img src="" alt="">
+          <button type="button"><i class="fas fa-chevron-left"></i></button>
+          <button type="button"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="player-desc-box"></div>
+      </div>
     </section>
     <section class="items">
       <ul class="items-list">
         <li class="items-list-item">
           <i class="fas fa-fire"></i>
-          <h1>열정있는 인재와의 만남</h1>
-          <p>20살에 뒤지지 않는 열정을 가진 인재입니다.</p>
+          <h1>Meeting passionate people</h1>
+          <p>
+            I am a creative talent who can challenge with passion with a smooth
+            personality.
+          </p>
         </li>
         <li class="items-list-item">
           <i class="fas fa-list"></i>
-          <h1>자체 디자인 창작물과 클론 코딩</h1>
-          <p>Coding player를 이용하여 열정 있는 인재의 작업물을 확인하세요.</p>
+          <h1>Self-designed creations and clone coding</h1>
+          <p>Check the work of passionate talent using Coding Player.</p>
         </li>
         <li class="items-list-item">
           <i class="fas fa-download"></i>
-          <h1>우리 회사에 저장</h1>
-          <p>인재를 채용하여 회사에 저장하고 함께 발전해 나가세요.</p>
+          <h1>Save it to our company</h1>
+          <p>
+            Recruit talented people, save them in the company, and develop them
+            together.
+          </p>
         </li>
       </ul>
     </section>
@@ -49,24 +73,25 @@
       <ol class="appeal-list">
         <li class="appeal-list-item">
           <div class="appeal-list-item-paragraph">
-            <h1>멈추지 않는 발전</h1>
+            <h1>Development that doesn't stop</h1>
             <p>
-              웹 퍼블리셔라면 갖춰야 할 HTML, CSS부터 JQuery, JavaScript까지
-              끊임없이 공부 중이며, 발전 중입니다.
+              I am constantly studying and developing HTML, CSS, JQuery<br />and
+              JavaScript that web publishers should have.
             </p>
           </div>
         </li>
         <li class="appeal-list-item">
           <div class="appeal-list-item-paragraph">
-            <h1>2022년 함께할 인재</h1>
-            <p>Coding player를 이용하여 작업물을 확인하고, 평가해주세요.</p>
+            <h1>Talents who will be with us in 2022</h1>
+            <p>Please check and evaluate the work using the coding player.</p>
           </div>
         </li>
         <li class="appeal-list-item">
           <div class="appeal-list-item-paragraph">
-            <h1>채용해서 함께하기</h1>
+            <h1>Hiring and being together</h1>
             <p>
-              작업물을 확인하고 마음에 드셨다면, 채용하여 함께 발전해 나가세요.
+              If you checked the work and liked it, hire me and develop it
+              together.
             </p>
           </div>
         </li>
@@ -74,17 +99,26 @@
     </section>
     <footer>
       <h1 class="footer-title">
-        다른 궁금한 점이 있나요?<br />
-        옆의 정보로 직접 물어보세요.
+        Do you have any other questions?<br />
+        Ask directly with the information on the right.
       </h1>
       <div class="footer-info">
         <div class="footer-info-paragraph">
-          이름 : 여원준<br />
-          주소 : 미정<br />
-          이메일 : rbgh004@naver.com<br />
-          전화 : 010-9033-6633
+          Name : Wonjun Yeo<br />
+          Address : 미정<br />
+          E-mail : rbgh004@naver.com<br />
+          tele : 010-9033-6633
         </div>
       </div>
     </footer>
+    <script>
+      $("#banner-link").on("click", function () {
+        $("#player").fadeIn();
+      });
+
+      $("#player-close").on("click", function () {
+        $("#player").fadeOut();
+      });
+    </script>
   </body>
 </html>
