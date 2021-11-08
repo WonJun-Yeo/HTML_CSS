@@ -36,12 +36,112 @@
         <button type="button" class="player-close" id="player-close">
           <i class="fas fa-window-close"></i>
         </button>
-        <div class="player-img-box">
-          <img src="" alt="">
-          <button type="button"><i class="fas fa-chevron-left"></i></button>
-          <button type="button"><i class="fas fa-chevron-right"></i></button>
+        <div class="user-like-bt-box">
+          <button type="button" class="like-bt" id="like-bt">
+            <i class="far fa-thumbs-up"></i>좋아요
+          </button>
+          <button type="button" class="hate-bt" id="hate-bt">
+            <i class="far fa-thumbs-down"></i>싫어요
+          </button>
         </div>
-        <div class="player-desc-box"></div>
+        <div class="player-img-stus">
+          <div id="img-stus" class="img-stus">1</div>
+        </div>
+        <div class="player-slide">
+          <div class="player-slide-box">
+            <div class="slide-img-box" id="slide-img-box">
+              <img
+                src="./assets/slide-img-1.jpg"
+                alt=""
+                class="slide-img-1"
+                id="slide-img-1"
+              />
+              <img
+                src="./assets/slide-img-2.jpg"
+                alt=""
+                class="slide-img-2"
+                id="slide-img-2"
+              />
+              <img
+                src="./assets/slide-img-3.jpg"
+                alt=""
+                class="slide-img-3"
+                id="slide-img-3"
+              />
+              <img
+                src="./assets/slide-img-4.jpg"
+                alt=""
+                class="slide-img-4"
+                id="slide-img-4"
+              />
+            </div>
+          </div>
+          <button type="button" id="slide-before-bt">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button type="button" id="slide-after-bt">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="player-desc-slide">
+          <div class="player-desc-box">
+            <ul class="slide-desc-box" id="slide-desc-box">
+              <li>
+                <h1>IKEA KOREA</h1>
+                <ul>
+                  <li>제작기간 : 2주</li>
+                  <li>디자인 : CLONE</li>
+                  <li>사용기술 : HTML, CSS</li>
+                  <li>
+                    설명 : HTML, CSS 공부 후 처음으로 해본 클론 코딩 홈페이지
+                  </li>
+                  <li>
+                    <a href="#">자세히 보기</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h1>W.J Coffee</h1>
+                <ul>
+                  <li>제작기간 : 2주</li>
+                  <li>디자인 : 자체</li>
+                  <li>사용기술 : HTML, CSS, JS</li>
+                  <li>
+                    설명 : HTML, CSS 공부 후 처음으로 해본 자체 디자인 코딩
+                    홈페이지
+                  </li>
+                  <li>
+                    <a href="#">자세히 보기</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h1>예정 중</h1>
+                <ul>
+                  <li>제작기간 : 2주</li>
+                  <li>디자인 : CLONE</li>
+                  <li>사용기술 : HTML, CSS, JS, JQuery</li>
+                  <li>설명 : JQuery 적용 첫 홈페이지</li>
+                  <li>
+                    <a href="#">자세히 보기</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h1>예정 중 2</h1>
+                <ul>
+                  <li>제작기간 : 2주</li>
+                  <li>디자인 : CLONE</li>
+                  <li>사용기술 : HTML, CSS, JS, JQuery</li>
+                  <li>설명 : JQuery 적용 첫 홈페이지</li>
+                  <li>
+                    <a href="#">자세히 보기</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
     <section class="items">
@@ -118,6 +218,80 @@
 
       $("#player-close").on("click", function () {
         $("#player").fadeOut();
+      });
+
+      var Lclick = 1;
+
+      $("#like-bt").on("click", function () {
+        if (Lclick == 1) {
+          $("#like-bt").addClass("active");
+          $("#hate-bt").removeClass("active");
+          Hclick = 1;
+          Lclick = 2;
+        } else if (Lclick == 2) {
+          $("#like-bt").removeClass("active");
+          Lclick = 1;
+        }
+      });
+
+      var Hclick = 1;
+
+      $("#hate-bt").on("click", function () {
+        if (Hclick == 1) {
+          $("#hate-bt").addClass("active");
+          $("#like-bt").removeClass("active");
+          Hclick = 2;
+          Lclick = 1;
+        } else if (Hclick == 2) {
+          $("#hate-bt").removeClass("active");
+          Hclick = 1;
+        }
+      });
+
+      var NowPicture = 1;
+
+      $("#slide-after-bt").click(function () {
+        if (NowPicture == 1) {
+          $("#slide-img-box").css("transform", "translateX(-25%)");
+          $("#slide-desc-box").css("transform", "translateX(-25%)");
+          $("#img-stus").css("margin-left", "203.3333333333333px");
+          $("#img-stus").html("2");
+          NowPicture = 2;
+        } else if (NowPicture == 2) {
+          $("#slide-img-box").css("transform", "translateX(-50%)");
+          $("#slide-desc-box").css("transform", "translateX(-50%)");
+          $("#img-stus").css("margin-left", "326.666666666666px");
+          $("#img-stus").html("3");
+          NowPicture = 3;
+        } else if (NowPicture == 3) {
+          $("#slide-img-box").css("transform", "translateX(-75%)");
+          $("#slide-desc-box").css("transform", "translateX(-75%)");
+          $("#img-stus").css("margin-left", "440px");
+          $("#img-stus").html("4");
+          NowPicture = 4;
+        }
+      });
+
+      $("#slide-before-bt").click(function () {
+        if (NowPicture == 2) {
+          $("#slide-img-box").css("transform", "translateX(0)");
+          $("#slide-desc-box").css("transform", "translateX(0)");
+          $("#img-stus").css("margin-left", "80px");
+          $("#img-stus").html("1");
+          NowPicture = 1;
+        } else if (NowPicture == 3) {
+          $("#slide-img-box").css("transform", "translateX(-25%)");
+          $("#slide-desc-box").css("transform", "translateX(-25%)");
+          $("#img-stus").css("margin-left", "203.3333333333333px");
+          $("#img-stus").html("2");
+          NowPicture = 2;
+        } else if (NowPicture == 4) {
+          $("#slide-img-box").css("transform", "translateX(-50%)");
+          $("#slide-desc-box").css("transform", "translateX(-50%)");
+          $("#img-stus").css("margin-left", "326.666666666666px");
+          $("#img-stus").html("3");
+          NowPicture = 3;
+        }
       });
     </script>
   </body>
