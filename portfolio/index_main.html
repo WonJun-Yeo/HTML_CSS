@@ -36,17 +36,7 @@
         <button type="button" class="player-close" id="player-close">
           <i class="fas fa-window-close"></i>
         </button>
-        <div class="user-like-bt-box">
-          <button type="button" class="like-bt" id="like-bt">
-            <i class="far fa-thumbs-up"></i>좋아요
-          </button>
-          <button type="button" class="hate-bt" id="hate-bt">
-            <i class="far fa-thumbs-down"></i>싫어요
-          </button>
-        </div>
-        <div class="player-img-stus">
-          <div id="img-stus" class="img-stus">1</div>
-        </div>
+
         <div class="player-slide">
           <div class="player-slide-box">
             <div class="slide-img-box" id="slide-img-box">
@@ -76,66 +66,100 @@
               />
             </div>
           </div>
-          <button type="button" id="slide-before-bt">
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <button type="button" id="slide-after-bt">
-            <i class="fas fa-chevron-right"></i>
-          </button>
+          <div class="player-operater">
+            <div class="operater-icon-list">
+              <ul class="operater-icon-list-box">
+                <li class="operater-icon-list-end" id="slide-start-bt">
+                  <button><i class="fas fa-step-backward"></i></button>
+                </li>
+                <li class="operater-icon-list-side" id="slide-before-bt">
+                  <button><i class="fas fa-backward"></i></button>
+                </li>
+                <li class="operater-icon-list-play">
+                  <button>
+                    <a href="#"><i class="fas fa-play"></i></a>
+                  </button>
+                </li>
+                <li class="operater-icon-list-side" id="slide-after-bt">
+                  <button><i class="fas fa-forward"></i></button>
+                </li>
+                <li class="operater-icon-list-end" id="slide-end-bt">
+                  <button><i class="fas fa-step-forward"></i></button>
+                </li>
+              </ul>
+              <ul class="operater-icon-list-desc-box">
+                <li>Back</li>
+                <li>Rewind</li>
+                <li>Play</li>
+                <li>Forward</li>
+                <li>Skip</li>
+              </ul>
+              <div class="player-operater-state">
+                <div
+                  class="player-operater-state-bar"
+                  id="player-operater-state-bar"
+                ></div>
+              </div>
+              <div class="player-operater-time">
+                <span id="play-time">0:57</span>
+                <span>3:48</span>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="player-desc-slide">
           <div class="player-desc-box">
             <ul class="slide-desc-box" id="slide-desc-box">
-              <li>
-                <h1>IKEA KOREA</h1>
-                <ul>
+              <li class="slide-desc-lsit">
+                <h1 class="slide-desc-lsit-title">IKEA KOREA</h1>
+                <ul class="slide-desc-lsit-desc">
                   <li>제작기간 : 2주</li>
                   <li>디자인 : CLONE</li>
                   <li>사용기술 : HTML, CSS</li>
                   <li>
                     설명 : HTML, CSS 공부 후 처음으로 해본 클론 코딩 홈페이지
                   </li>
-                  <li>
-                    <a href="#">자세히 보기</a>
+                  <li class="detail-info-button">
+                    <button type="button"><a href="#">자세히 보기</a></button>
                   </li>
                 </ul>
               </li>
-              <li>
-                <h1>W.J Coffee</h1>
-                <ul>
+              <li class="slide-desc-lsit">
+                <h1 class="slide-desc-lsit-title">W.J Coffee</h1>
+                <ul class="slide-desc-lsit-desc">
                   <li>제작기간 : 2주</li>
-                  <li>디자인 : 자체</li>
+                  <li>디자인 : self-production</li>
                   <li>사용기술 : HTML, CSS, JS</li>
                   <li>
                     설명 : HTML, CSS 공부 후 처음으로 해본 자체 디자인 코딩
                     홈페이지
                   </li>
-                  <li>
-                    <a href="#">자세히 보기</a>
+                  <li class="detail-info-button">
+                    <button type="button"><a href="#">자세히 보기</a></button>
                   </li>
                 </ul>
               </li>
-              <li>
-                <h1>예정 중</h1>
-                <ul>
+              <li class="slide-desc-lsit">
+                <h1 class="slide-desc-lsit-title">on the drawing board</h1>
+                <ul class="slide-desc-lsit-desc">
+                  <li>제작기간 : 2주</li>
+                  <li>디자인 : clone</li>
+                  <li>사용기술 : HTML, CSS, JS, JQuery</li>
+                  <li>설명 : JQuery 적용 첫 홈페이지</li>
+                  <li class="detail-info-button">
+                    <button type="button"><a href="#">자세히 보기</a></button>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide-desc-lsit">
+                <h1 class="slide-desc-lsit-title">on the drawing board 2</h1>
+                <ul class="slide-desc-lsit-desc">
                   <li>제작기간 : 2주</li>
                   <li>디자인 : CLONE</li>
                   <li>사용기술 : HTML, CSS, JS, JQuery</li>
                   <li>설명 : JQuery 적용 첫 홈페이지</li>
-                  <li>
-                    <a href="#">자세히 보기</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <h1>예정 중 2</h1>
-                <ul>
-                  <li>제작기간 : 2주</li>
-                  <li>디자인 : CLONE</li>
-                  <li>사용기술 : HTML, CSS, JS, JQuery</li>
-                  <li>설명 : JQuery 적용 첫 홈페이지</li>
-                  <li>
-                    <a href="#">자세히 보기</a>
+                  <li class="detail-info-button">
+                    <button type="button"><a href="#">자세히 보기</a></button>
                   </li>
                 </ul>
               </li>
@@ -220,78 +244,76 @@
         $("#player").fadeOut();
       });
 
-      var Lclick = 1;
-
-      $("#like-bt").on("click", function () {
-        if (Lclick == 1) {
-          $("#like-bt").addClass("active");
-          $("#hate-bt").removeClass("active");
-          Hclick = 1;
-          Lclick = 2;
-        } else if (Lclick == 2) {
-          $("#like-bt").removeClass("active");
-          Lclick = 1;
-        }
-      });
-
-      var Hclick = 1;
-
-      $("#hate-bt").on("click", function () {
-        if (Hclick == 1) {
-          $("#hate-bt").addClass("active");
-          $("#like-bt").removeClass("active");
-          Hclick = 2;
-          Lclick = 1;
-        } else if (Hclick == 2) {
-          $("#hate-bt").removeClass("active");
-          Hclick = 1;
-        }
-      });
-
       var NowPicture = 1;
 
       $("#slide-after-bt").click(function () {
         if (NowPicture == 1) {
           $("#slide-img-box").css("transform", "translateX(-25%)");
           $("#slide-desc-box").css("transform", "translateX(-25%)");
-          $("#img-stus").css("margin-left", "203.3333333333333px");
-          $("#img-stus").html("2");
+          $("#player-operater-state-bar").css("width", "180px");
+          $("#play-time").html("1:54");
           NowPicture = 2;
         } else if (NowPicture == 2) {
           $("#slide-img-box").css("transform", "translateX(-50%)");
           $("#slide-desc-box").css("transform", "translateX(-50%)");
-          $("#img-stus").css("margin-left", "326.666666666666px");
-          $("#img-stus").html("3");
+          $("#player-operater-state-bar").css("width", "270px");
+          $("#play-time").html("2:51");
           NowPicture = 3;
         } else if (NowPicture == 3) {
           $("#slide-img-box").css("transform", "translateX(-75%)");
           $("#slide-desc-box").css("transform", "translateX(-75%)");
-          $("#img-stus").css("margin-left", "440px");
-          $("#img-stus").html("4");
+          $("#player-operater-state-bar").css("width", "100%");
+          $("#play-time").html("3:48");
           NowPicture = 4;
+        } else if (NowPicture == 4) {
+          $("#slide-img-box").css("transform", "translateX(0)");
+          $("#slide-desc-box").css("transform", "translateX(0)");
+          $("#player-operater-state-bar").css("width", "90px");
+          $("#play-time").html("0:57");
+          NowPicture = 1;
         }
       });
 
       $("#slide-before-bt").click(function () {
-        if (NowPicture == 2) {
+        if (NowPicture == 1) {
+          $("#slide-img-box").css("transform", "translateX(-75%)");
+          $("#slide-desc-box").css("transform", "translateX(-75%)");
+          $("#player-operater-state-bar").css("width", "100%");
+          $("#play-time").html("3:48");
+          NowPicture = 4;
+        } else if (NowPicture == 2) {
           $("#slide-img-box").css("transform", "translateX(0)");
           $("#slide-desc-box").css("transform", "translateX(0)");
-          $("#img-stus").css("margin-left", "80px");
-          $("#img-stus").html("1");
+          $("#player-operater-state-bar").css("width", "90px");
+          $("#play-time").html("0:57");
           NowPicture = 1;
         } else if (NowPicture == 3) {
           $("#slide-img-box").css("transform", "translateX(-25%)");
           $("#slide-desc-box").css("transform", "translateX(-25%)");
-          $("#img-stus").css("margin-left", "203.3333333333333px");
-          $("#img-stus").html("2");
+          $("#player-operater-state-bar").css("width", "180px");
+          $("#play-time").html("1:54");
           NowPicture = 2;
         } else if (NowPicture == 4) {
           $("#slide-img-box").css("transform", "translateX(-50%)");
           $("#slide-desc-box").css("transform", "translateX(-50%)");
-          $("#img-stus").css("margin-left", "326.666666666666px");
-          $("#img-stus").html("3");
+          $("#player-operater-state-bar").css("width", "270px");
+          $("#play-time").html("2:51");
           NowPicture = 3;
         }
+      });
+
+      $("#slide-start-bt").click(function () {
+        $("#slide-img-box").css("transform", "translateX(0)");
+        $("#slide-desc-box").css("transform", "translateX(0)");
+        $("#player-operater-state-bar").css("width", "90px");
+        $("#play-time").html("0:57");
+      });
+
+      $("#slide-end-bt").click(function () {
+        $("#slide-img-box").css("transform", "translateX(-75%)");
+        $("#slide-desc-box").css("transform", "translateX(-75%)");
+        $("#player-operater-state-bar").css("width", "100%");
+        $("#play-time").html("3:48");
       });
     </script>
   </body>
