@@ -32,6 +32,11 @@ textarea:active {
   box-shadow: none;
 }
 
+.wraper {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
 /* header */
 
 header {
@@ -2083,12 +2088,5 @@ button {
     bottom: 40px;
     border-radius: 50%;
     background-color: #fff;
-  }
-}
-
-/* Fix container width */
-@media screen and (min-width: 1500px) {
-  body {
-    max-width: 1800px !important;
   }
 }
