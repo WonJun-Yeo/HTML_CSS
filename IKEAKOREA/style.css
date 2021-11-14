@@ -2062,6 +2062,7 @@ button {
   /* banner */
 
   .banner {
+    position: relative;
     margin: 0 40px 0 120px;
   }
 
@@ -2095,10 +2096,24 @@ button {
   }
 
   .user-icon-group .user-icon-list {
-    position: fixed;
-    top: 55px;
-    left: 35px;
+    position: absolute;
+    top: 20px;
+    left: -100px;
     padding: 20px;
+    visibility: visible;
+    transition: all 1s ease;
+  }
+
+  .UpToTop {
+    display: inline-block;
+    position: absolute;
+    left: -100px;
+    bottom: -900px;
+    border-radius: 50%;
+    background-color: #fff;
+    visibility: visible;
+    opacity: 0;
+    transition: all 1s ease;
   }
 
   /* capmpain */
@@ -2246,14 +2261,5 @@ button {
   .footer-mid ul {
     display: flex;
     margin-bottom: 32px;
-  }
-
-  .UpToTop {
-    display: inline-block;
-    position: fixed;
-    left: 35px;
-    bottom: 40px;
-    border-radius: 50%;
-    background-color: #fff;
   }
 }

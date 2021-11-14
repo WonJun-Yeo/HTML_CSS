@@ -39,6 +39,12 @@ textarea:active {
   box-shadow: none;
 }
 
+.wraper {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
 /* header */
 
 .header-wraper {
@@ -136,6 +142,7 @@ header {
   width: 100%;
   height: 100%;
   padding-top: 70px;
+  margin: 0 auto;
 }
 
 .header-list {
